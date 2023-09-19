@@ -1,0 +1,84 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "article article2 aside"
+    "article3 article4 article5"
+    "footer footer footer";
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-columns: 2fr 2fr 1fr;
+  gap: 10px;
+  height: 100vh;
+}
+
+header {
+  grid-area: header;
+  background-color: #ccc;
+  padding: 10px;
+}
+
+nav {
+  grid-area: nav;
+  background-color: #eee;
+  padding: 10px;
+}
+
+article {
+  grid-area: article;
+  background-color: #f9f9f9;
+  padding: 40px;
+}
+article2 {
+  grid-area: article2;
+  background-color: #f9f9f9;
+  padding: 40px;
+}
+article3 {
+  grid-area: article3;
+  background-color: #f9f9f9;
+  padding: 40px;
+}
+article4 {
+  grid-area: article4;
+  background-color: #f9f9f9;
+  padding: 40px;
+}
+article5 {
+    grid-area: article5;
+    background-color: #f9f9f9;
+    padding: 40px;
+  }
+
+aside {
+  grid-area: aside;
+  background-color: #f9f9f9;
+  padding: 40px;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #ccc;
+  padding: 10px;
+}
+
+article {
+  margin-bottom: 20px;
+}
+
+/* Estilos adicionais para fins de ilustração */
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
